@@ -1,0 +1,89 @@
+body{
+    
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.cal{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black; 
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0,25%,0,25%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+}
+.buttons{
+    padding: 10px;
+    justify-content: space-between;
+    align-content: center;
+    
+    
+}
+#b1,#b2,#b3,#b4{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    background-color: coral;
+    border-width: 0;
+    transition: 0.4s;
+    border-radius: 5px;
+    
+    
+    
+}
+#b1:hover,#b2:hover,#b3:hover,#b4:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    font-size: 20px;
+}
+#number1,#number2{
+    border-width: 1px;
+    padding: 6px;
+    border-radius: 5px;
+    background-color:white;
+    font-family: Georgia;
+    font-size: 18px;
+    text-align: center;
+
+}
+label{
+    color: darkslategrey;
+    font-family: Georgia;
+    font-size: 18px;
+}
+#calbutton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    height:35px ;
+    width: 90px;
+    font-family: Georgia;
+    font-size: 15px;
+    border-width: 0;
+    background-color: darkslateblue;
+    transition: 0.4s;
+    border-radius: 5px;
+    
+}
+#calbutton:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+#res{
+    height: 50px;
+    width: 150px;
+    background-color: rosybrown;
+    color: black;
+    text-align: center;
+    border-width: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}

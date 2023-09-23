@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="cal">
+        <h1>Calculator</h1>
+        <label for="First_Number">Firts Number</label>
+        <input type="number" id="number1" name="num1">
+        
+        <label for="Second_Number">Second Number</label>
+        <input type="number" id="number2" name="num2"><br/>
+
+        <!--Operator Buttons-->
+
+        <div class="buttons">
+            <input id="b1" type="button" value="+" onclick="operator(this.value)">
+            <input id="b2" type="button" value="-"  onclick="operator(this.value)">
+            <input id="b3" type="button" value="*"  onclick="operator(this.value)">
+            <input id="b4" type="button" value="/"  onclick="operator(this.value)">
+        </div>
+
+        <!--Display output-->
+        <div class="res">
+            <input type="number" value="0" placeholder="=" id="res">
+        </div>
+    </div>
+    <script>
+
+        function operator(operator) {
+            calculation(operator)
+        }
+
+        function calculation(operator){
+            var num1= parseInt(document.getElementById("number1").value);
+            var num2= parseInt(document.getElementById("number2").value);
+            var operator;
+            var res=0;
+
+            if(operator == "+"){
+                res = num1 + num2;
+            }
+            else if(operator == "-"){
+                res = num1 - num2;
+            }
+            else if(operator == "*"){
+                res = num1 * num2;
+            }
+            else if(operator == "/"){
+                res = num1 / num2;
+            }else{
+                res = 0
+            }
+            
+            document.getElementById("res").value = res;
+        }
+    </script>
+</body>
+</html>
